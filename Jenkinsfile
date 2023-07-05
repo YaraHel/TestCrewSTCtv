@@ -5,10 +5,10 @@ pipeline {
             steps {
                 sh '.mvn clean test'
             }
-        }
-        post {
-            always {
-                junit '**/cucumber/report.json'
+            post {
+                always {
+                    junit '**/cucumber/report.json'
+                }
             }
         }
     }
