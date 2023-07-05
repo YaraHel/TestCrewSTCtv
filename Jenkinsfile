@@ -1,3 +1,6 @@
+tools {
+    maven 'M3'
+}
 pipeline {
     agent any
     stages {
